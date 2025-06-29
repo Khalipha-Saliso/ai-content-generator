@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Content Generator</title>
+  <link rel="stylesheet" href="src/style.css" />
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AI Content Generator</h1>
+      <p>Enter your instructions below to generate custom content.</p>
+    </header>
+
+    <main>
+      <form id="instruction-form">
+        <textarea
+          id="user-instruction"
+          placeholder="Type your instructions here..."
+          required
+        ></textarea>
+        <button type="submit" id="submit-button">Generate</button>
+      </form>
+      <div id="result" aria-live="polite"></div>
+    </main>
+
+    <footer>
+        This AI project was coded by
+    <a href="https://github.com/Khalipha-Saliso">Khalipha Saliso</a>,
+    open-sourced on
+    <a href="#">GitHub</a>
+    and hosted on
+    <a href="#">Netlify</a>.
+    <br>
+      Built with 💡 using the <a href="https://www.shecodes.io/" target="_blank">SheCodes API</a>
+    </footer>
+  </div>
+
+  <script src="src/script.js"></script>
+</body>
+</html>
